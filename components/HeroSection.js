@@ -3,6 +3,7 @@
 import { Advent_Pro, Concert_One } from "next/font/google";
 import Carousel from "./Carousel";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const advent_pro = Advent_Pro({
   subsets: ["latin"],
@@ -34,8 +35,8 @@ const HeroSection = () => {
           Come experience SATISFACTION with our software solutions.
         </p>
         <div>
-          <Button className='bg-green-500 text-white text-md'>
-            Contact us now
+          <Button masChild className='bg-green-500 text-white text-md'>
+          <Link href='mailto:ask@soft-lutions.com.ng'>Contact us now</Link>  
           </Button>
         </div>
       </div>

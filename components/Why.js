@@ -44,23 +44,24 @@ const Why = () => {
     <div className='py-20 px-4 max-w-7xl mx-auto'>
       <h1 className='font-semibold text-3xl text-center '>WHY?</h1>
       <p className='text-center'>Why you need a website</p>
-      <div className='mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols- gap-4 md:gap-6'>
+      <div className='mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
         {whys.map((why) => (
           <div
             key={why.id}
-            className='flex flex-col sm:flex-row gap-3 sm:gap-1 bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-md max-w-xl mx-auto'>
-            <div className='flex items-center justify-center'>
+            className='flex flex-col sm:flex-ro gap-3 sm:gap-1 bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-md max-w-xl mx-auto'>
+            <div className='flex flex-col sm:flex-row items-center sm:gap-3'>
               <div className='relative w-[132px] h-[132px] lg:w-[129px] lg:h-[129px] xl:w-[135px] xl:h-[135px] shrink-0'>
                 <Image alt='service 24/7' fill priority src={why.img} />
               </div>
-            </div>
-            <div className='space-y-2'>
               <p className='text-center text-lg sm:text-left font-medium uppercase'>
                 {why.title}
               </p>
-              <p className='text-center sm:text-left font-light '>
-                {why.body}
-              </p>
+            </div>
+            <div className='space-y-2'>
+              {/* <p className='text-center text-lg sm:text-left font-medium uppercase'>
+                {why.title} old
+              </p> */}
+              <p className='text-center sm:text-left font-light '>{why.body}</p>
             </div>
           </div>
         ))}
