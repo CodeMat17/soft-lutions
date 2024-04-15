@@ -1,4 +1,10 @@
-import { HeartHandshakeIcon, LampDeskIcon, SparkleIcon } from "lucide-react";
+import {
+  GoalIcon,
+  HeartHandshakeIcon,
+  LampDeskIcon,
+  Router,
+  SparkleIcon,
+} from "lucide-react";
 
 const whys = [
   {
@@ -20,6 +26,18 @@ const whys = [
     img: "/web_dev.webp",
     desc: "Your success is our mission. Let us create something extraordinary together.",
   },
+  {
+    id: 4,
+    title: "RESULTS-DRIVEN",
+    img: "/web_dev.webp",
+    desc: "we measure success by the impact our solutions create for your business.",
+  },
+  {
+    id: 5,
+    title: "CONTINUOUS LEARNING",
+    img: "/web_dev.webp",
+    desc: "Technology evolves, and so do we. We stay ahead of the curves.",
+  },
 ];
 
 const WhyUs = () => {
@@ -37,6 +55,8 @@ const WhyUs = () => {
               {why.id === 1 && <SparkleIcon />}
               {why.id === 2 && <LampDeskIcon />}
               {why.id === 3 && <HeartHandshakeIcon />}
+              {why.id === 4 && <GoalIcon />}
+              {why.id === 5 && <Router />}
               <h2 className=' sm:text-lg md:text-xl  font-medium'>
                 {why.title}
               </h2>

@@ -29,7 +29,7 @@ const Projects = () => {
   return (
     <div className='py-20 px-4 max-w-7xl mx-auto'>
       <h1 className='font-semibold text-3xl text-center '>CURATED PROJECTS</h1>
-      <div className='mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
+      <div className='mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6'>
         {vids.map((vid) => (
           <div key={vid.id} className='relative w-full rounded-lg overflow-hidden border bg-gray-700 text-white pb-2 shadow-md'>
             <CldVideoPlayer
