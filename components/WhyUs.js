@@ -50,7 +50,7 @@ const WhyUs = () => {
         {whys.map((why) => (
           <div
             key={why.id}
-            className='w-full max-w-md mx-auto flex flex-col justify-center gap-4 border rounded-lg overflow-hidden px-4 py-5 sm:p-5 lg:p-8 shadow-md'>
+            className='w-full max-w-md mx-auto flex flex-col justify-center gap-4 border rounded-lg overflow-hidden px-4 py-5 sm:p-5 lg:p-8 shadow-md dark:shadow-zinc-800'>
             <div className='flex items-center gap-3'>
               {why.id === 1 && <SparkleIcon />}
               {why.id === 2 && <LampDeskIcon />}

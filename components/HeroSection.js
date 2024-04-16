@@ -35,7 +35,7 @@ const HeroSection = () => {
   return (
     <div className='py-6 px-4 max-w-7xl mx-auto'>
       <div className='py-6 flex flex-col md:flex-row items-center justify-around gap-6 lg:gap-0 '>
-        <div className='order-last md:order-first flex flex-col gap-3 w-full '>
+        <div className='order-last md:order-first flex flex-col gap-5 w-full '>
           <div className={concert_one.className}>
             <p className='text-5xl sm:text-6xl md:text-7xl md:max-w-4xl'>
               Welcome to Codemat So<span className='text-green-500'>ft</span>
@@ -43,7 +43,7 @@ const HeroSection = () => {
             </p>
           </div>
 
-          <p className={`text-lg text-gray-500 md:max-w-xl`}>
+          <p className={`text-lg sm:text-xl text-gray-500 md:max-w-xl`}>
             At CodeMat Soft-lutions, we weave technology into elegant solutions.
             Our passion lies in creating intelligent software and dynamic
             experiences for forward-thinking companies. We are here to transform
@@ -71,7 +71,7 @@ const HeroSection = () => {
           {services.map((service) => (
             <div
               key={service.id}
-              className='w-full  max-w-md mx-auto flex flex-col justify-center gap-4 border rounded-lg overflow-hidden p-5 lg:p-8 shadow-md'>
+              className='w-full  max-w-md mx-auto flex flex-col justify-center gap-4 rounded-lg overflow-hidden p-5 lg:p-8 border shadow-md dark:shadow-lg dark:shadow-zinc-800'>
               <div className='flex flex-col justify-center items-center gap-3'>
                 <div className='relative w-32 h-32 rounded-full overflow-hidden '>
                   <Image alt='' fill priority src={service.img} />

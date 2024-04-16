@@ -42,8 +42,9 @@ const whys = [
 const Why = () => {
   return (
     <div className='py-20 px-4 max-w-7xl mx-auto'>
-      <h1 className='font-semibold text-3xl text-center '>STILL UNDER CONSTRUCTION. PLZ CHECK AGAIN.</h1>
-      <p className='text-center'>Why you need a website</p>
+      <h1 className='font-semibold text-3xl text-center uppercase'>
+        Why you need a website
+      </h1>
       <div className='mt-8 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6'>
         {whys.map((why) => (
           <div
