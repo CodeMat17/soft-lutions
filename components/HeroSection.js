@@ -34,11 +34,14 @@ const services = [
 const HeroSection = () => {
   return (
     <div className='py-6 px-4 max-w-7xl mx-auto'>
+      <p className='text-center text-sm bg-green-100 text-green-600 px-6 py-1.5 rounded-md'>
+        The website is currently under reconstruction. We will be done in a few days time.
+      </p>
       <div className='py-6 flex flex-col md:flex-row items-center justify-around gap-6 lg:gap-0 '>
         <div className='order-last md:order-first flex flex-col gap-5 w-full '>
           <div className={concert_one.className}>
             <p className='text-5xl sm:text-6xl md:text-7xl md:max-w-4xl'>
-              Welcome to Codemat So<span className='text-green-500'>ft</span>
+              Welcome to CodeMat So<span className='text-green-500'>ft</span>
               -lutions
             </p>
           </div>
@@ -50,8 +53,8 @@ const HeroSection = () => {
             your digital landscape.
           </p>
           <p className={` text-gray-500 text-lg`}>
-          Explore our services, read success stories, and reach out to us.
-        </p>
+            Explore our services, read success stories, and reach out to us.
+          </p>
           <div>
             <Button asChild className='bg-green-500 text-white text-md py-6'>
               <Link href='mailto:ask@soft-lutions.com.ng'>Contact us now</Link>
@@ -76,9 +79,11 @@ const HeroSection = () => {
                 <div className='relative w-32 h-32 rounded-full overflow-hidden '>
                   <Image alt='' fill priority src={service.img} />
                 </div>
-                <h2 className='text-center text-lg md:text-xl  font-medium'>{service.title}</h2>
+                <h2 className='text-center text-lg md:text-xl  font-medium'>
+                  {service.title}
+                </h2>
               </div>
-              <p className="md:text-lg">{service.desc}</p>
+              <p className='md:text-lg'>{service.desc}</p>
             </div>
           ))}
         </div>
