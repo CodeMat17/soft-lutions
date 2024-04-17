@@ -43,7 +43,7 @@ const Testimonial = () => {
             className='flex flex-col sm:flex-ro gap-3 sm:gap-1 bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-md max-w-xl mx-auto'>
             <div className=''>
               <p
-                className={`text-cente font-light text-2xl md:text-3xl tracking-wide ${square_peg.className}`}>
+                className={`text-cente font-light text-3xl tracking-wide ${square_peg.className}`}>
                 {review.note}
               </p>
             </div>
