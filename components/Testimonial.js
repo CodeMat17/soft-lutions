@@ -1,6 +1,6 @@
-import { Square_Peg } from "next/font/google";
+import { Pacifico, Caveat, Caveat_Brush} from "next/font/google";
 
-const square_peg = Square_Peg({ subsets: ["latin"], weight: ["400"] });
+const square_peg = Caveat({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
   title: "CodeMat Soft-lutions | WHY?",
@@ -13,19 +13,19 @@ const reviews = [
     id: 1,
 
     name: "Mr. Anukakwa Sam",
-    note: "CodeMAt Soft-lution is a game-changer! Their innovative solutions transformed our business landscape. From AI development to web development, they deliver excellence. Highly recommended.",
+    note: '"CodeMat Soft-lution is a game-changer! Their innovative solutions transformed our business landscape. From AI development to web development, they deliver excellence. Highly recommended."',
     who: "Satisfied Client",
   },
   {
     id: 2,
     name: "Mardiko Ventures",
-    note: "CodeMat Soft-lutions commitment to quality and attention to details and innovative mind set set the apart. Ere are thrilled with the results!.",
+    note: '"CodeMat Soft-lutions commitment to quality and attention to details and innovative mind set set the apart. Ere are thrilled with the results!."',
     who: "Satisfied Client",
   },
   {
     id: 3,
     name: "African Designs and Fabrics",
-    note: "CodeMat Soft-lutions was the best decision we made. Their AI solutions streamlined our processes, and their web development captivated our audience. A reliable partner indeed!.",
+    note: '"CodeMat Soft-lutions was the best decision we made. Their AI solutions streamlined our processes, and their web development captivated our audience. A reliable partner indeed!."',
     who: "Happy Customer",
   },
 ];
@@ -40,10 +40,10 @@ const Testimonial = () => {
         {reviews.map((review) => (
           <div
             key={review.id}
-            className='flex flex-col sm:flex-ro gap-3 sm:gap-1 bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-md max-w-xl mx-auto'>
+            className='flex flex-col sm:flex-ro gap-5 sm:gap-1 bg-gray-100 dark:bg-gray-700 p-5 rounded-lg shadow-md max-w-xl mx-auto'>
             <div className=''>
               <p
-                className={`text-cente font-light text-3xl tracking-wide ${square_peg.className}`}>
+                className={`text-cente font-light text-2xl md:text-3xl  ${square_peg.className}`}>
                 {review.note}
               </p>
             </div>
