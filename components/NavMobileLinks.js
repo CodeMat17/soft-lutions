@@ -34,7 +34,7 @@ const NavMobileLinks = () => {
             </DropdownMenuItem>
             <DropdownMenuItem className='text-lg'>
               <ShapesIcon className='mr-3 h-5 w-5' />
-              <span>FEATURES</span>
+              <span>WHY</span>
             </DropdownMenuItem>
             <DropdownMenuItem className='text-lg'>
               <GlobeLockIcon className='mr-3 h-5 w-5' />

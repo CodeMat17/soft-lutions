@@ -6,8 +6,8 @@ import NavBar from "@/components/NavBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CodeMat Soft-lutions | Home",
-  description: "CodeMat Soft-lutions is a software development company",
+  title: "CodeMat Soft-lutions | HOME",
+  description: "Homepage: CodeMat Soft-lutions is a software solution development company",
 };
 
 export default function RootLayout({ children }) {

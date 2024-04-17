@@ -6,7 +6,7 @@ const NavDesktopLinks = () => {
       <nav className='hidden md:flex items-center gap-4'>
         <Link href='/'>HOME</Link>
 
-        <Link href='/'>OVERVIEW</Link>
+        <Link href='/why'>WHY</Link>
         <Link href='/'>FEATURES</Link>
         <Link href='/'>PROJECTS</Link>
         <Link href='/' className='whitespace-nowrap'>

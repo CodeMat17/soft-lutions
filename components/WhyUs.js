@@ -52,11 +52,13 @@ const WhyUs = () => {
             key={why.id}
             className='w-full max-w-md mx-auto flex flex-col justify-center gap-4 border rounded-lg overflow-hidden px-4 py-5 sm:p-5 lg:p-8 shadow-md dark:shadow-zinc-800'>
             <div className='flex items-center gap-3'>
-              {why.id === 1 && <SparkleIcon />}
-              {why.id === 2 && <LampDeskIcon />}
-              {why.id === 3 && <HeartHandshakeIcon />}
-              {why.id === 4 && <GoalIcon />}
-              {why.id === 5 && <Router />}
+              {why.id === 1 && <SparkleIcon className='text-green-500' />}
+              {why.id === 2 && <LampDeskIcon className='text-green-500' />}
+              {why.id === 3 && (
+                <HeartHandshakeIcon className='text-green-500' />
+              )}
+              {why.id === 4 && <GoalIcon className='text-green-500' />}
+              {why.id === 5 && <Router className='text-green-500' />}
               <h2 className=' sm:text-lg md:text-xl  font-medium'>
                 {why.title}
               </h2>

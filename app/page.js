@@ -2,7 +2,7 @@ import Footer from '@/components/Footer';
 import HeroSection from '@/components/HeroSection'
 import Overview from '@/components/Overview';
 import Projects from '@/components/Projects';
-import Why from '@/components/Why';
+import Testimonial from '@/components/Testimonial';
 import WhyUs from '@/components/WhyUs';
 import React from 'react'
 
@@ -12,7 +12,7 @@ const Home = () => {
       <HeroSection />
       <WhyUs />
       {/* <Overview /> */}
-      <Why />
+   <Testimonial />
       <Projects />
       <Footer />
     </div>
