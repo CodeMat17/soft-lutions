@@ -5,11 +5,17 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { AlignRight, GlobeLockIcon, HomeIcon, NotebookTabsIcon, RssIcon, ShapesIcon, ShrinkIcon } from "lucide-react";
+import {
+  AlignRight,
+  GlobeLockIcon,
+  NotebookTabsIcon,
+  RssIcon,
+  ShapesIcon,
+  ShrinkIcon,
+} from "lucide-react";
+import Link from "next/link";
 import { Button } from "./ui/button";
 
 const NavMobileLinks = () => {
@@ -28,26 +34,40 @@ const NavMobileLinks = () => {
           {/* <DropdownMenuLabel>My Account</DropdownMenuLabel>
           <DropdownMenuSeparator /> */}
           <DropdownMenuGroup className='flex flex-col gap-4 py-4 px-1'>
-            <DropdownMenuItem className='text-lg'>
-              <ShrinkIcon className='mr-3 h-5 w-5' />
-              <span>HOME</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className='text-lg'>
-              <ShapesIcon className='mr-3 h-5 w-5' />
-              <span>WHY</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className='text-lg'>
-              <GlobeLockIcon className='mr-3 h-5 w-5' />
-              <span>PROJECTS</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className='text-lg'>
-              <NotebookTabsIcon className='mr-3 h-5 w-5' />
-              <span>CONTACT-US</span>
-            </DropdownMenuItem>
-            <DropdownMenuItem className='text-lg'>
-              <RssIcon className='mr-3 h-5 w-5' />
-              <span>BLOG</span>
-            </DropdownMenuItem>
+            <Link href='/'>
+              <DropdownMenuItem className='text-lg'>
+                <ShrinkIcon className='mr-3 h-5 w-5' />
+                <span>HOME</span>
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href='/why'>
+              <DropdownMenuItem className='text-lg'>
+                <ShapesIcon className='mr-3 h-5 w-5' />
+                <span>WHY</span>
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href='/projects'>
+              <DropdownMenuItem className='text-lg'>
+                <GlobeLockIcon className='mr-3 h-5 w-5' />
+                <span>PROJECTS</span>
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href='/contact-us'>
+              <DropdownMenuItem className='text-lg'>
+                <NotebookTabsIcon className='mr-3 h-5 w-5' />
+                <span>CONTACT-US</span>
+              </DropdownMenuItem>
+            </Link>
+
+            <Link href='/blog'>
+              <DropdownMenuItem className='text-lg'>
+                <RssIcon className='mr-3 h-5 w-5' />
+                <span>BLOG</span>
+              </DropdownMenuItem>
+            </Link>
           </DropdownMenuGroup>
         </DropdownMenuContent>
       </DropdownMenu>

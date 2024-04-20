@@ -7,12 +7,12 @@ import WhyUs from "@/components/WhyUs";
 
 const Home = () => {
   return (
-    <div className=''>
+    <div className='min-h-[73vh]'>
       <HeroSection />
       <WhyUs />
       <Testimonial />
       <ContactUs />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

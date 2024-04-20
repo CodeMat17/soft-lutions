@@ -1,10 +1,20 @@
 "use client";
 
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuGroup,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { MailsIcon, PhoneIcon } from "lucide-react";
 import { Advent_Pro, Concert_One } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 import Carousel from "./Carousel";
 import { Button } from "./ui/button";
+import Link from "next/link";
+import { FaWhatsapp } from "react-icons/fa6";
+
 
 const advent_pro = Advent_Pro({
   subsets: ["latin"],
@@ -35,12 +45,13 @@ const HeroSection = () => {
   return (
     <div className='py-6 px-4 max-w-7xl mx-auto'>
       <p className='text-center text-sm bg-green-100 text-green-600 px-6 py-1.5 rounded-md'>
-        The website is currently under reconstruction. We will be done in a few days time.
+        The website is currently under reconstruction. We will be done in a few
+        days time.
       </p>
       <div className='py-6 flex flex-col md:flex-row items-center justify-around gap-6 lg:gap-0 '>
-        <div className='order-last md:order-first flex flex-col gap-5 w-full '>
+        <div className='order-last md:order-first flex flex-col gap-5 w-full max-w-xl'>
           <div className={concert_one.className}>
-            <p className='text-5xl sm:text-6xl md:text-7xl md:max-w-4xl'>
+            <p className='text-5xl md:text-6xl'>
               Welcome to CodeMat So<span className='text-green-500'>ft</span>
               -lutions
             </p>
@@ -56,9 +67,35 @@ const HeroSection = () => {
             Explore our services, read success stories, and reach out to us.
           </p>
           <div>
-            <Button asChild className='bg-green-500 text-white text-md py-6'>
-              <Link href='mailto:ask@soft-lutions.com.ng'>Contact us now</Link>
-            </Button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button className='bg-green-500 text-white text-md py-6 dark:hover:bg-green-700'>
+                  Contact us now
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className='ml-4'>
+                <DropdownMenuGroup className='flex items-center gap-4'>
+                  <Link href='tel:+2348063856120'>
+                    <DropdownMenuItem>
+                      <PhoneIcon className='mr-2 h-5 w-5 text-green-500' />
+                      {/* <span>Profile</span> */}
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href='https://wa.me/2348063856120'>
+                    <DropdownMenuItem>
+                      <FaWhatsapp className='mr-2 h-6 w-6 text-green-500' />
+                      {/* <span>WhatsApp</span> */}
+                    </DropdownMenuItem>
+                  </Link>
+                  <Link href='mailto:ask@soft-lutions.com.ng'>
+                    <DropdownMenuItem>
+                      <MailsIcon className='mr-2 h-5 w-5 text-green-500' />
+                      {/* <span>Email</span> */}
+                    </DropdownMenuItem>
+                  </Link>
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
 

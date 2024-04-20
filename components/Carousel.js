@@ -24,8 +24,8 @@ const Carousel = () => {
   }, []);
 
     return (
-      <div className='w-full max-w-[410px]  flex items-center justify-center backdrop-blur-xl bg-gradient-to-tr from-green-500 via-amber-500 to-[#734ca2] p-1 rounded-full '>
-        <div className='relative w-full max-w-[410px]  aspect-square rounded-full overflow-hidden shadow-2xl'>
+      <div className='w-full max-w-[370px] flex items-center justify-center backdrop-blur-xl bg-gradient-to-tr from-green-500 via-amber-500 to-[#734ca2] p-1 rounded-full '>
+        <div className='relative w-full max-w-[370px] aspect-square rounded-full overflow-hidden shadow-2xl'>
           {images.map((image, index) => (
             <Image
               key={index}
