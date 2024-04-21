@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa6";
 
 const ContactUs = () => {
   return (
-    <div className='py-20 px-4 max-w-7xl mx-auto'>
+    <div className='py-20 px-4 max-w-7xl mx-auto min-h-screen'>
       <h1 className='font-semibold text-3xl text-center uppercase'>
         Contact Us
       </h1>
