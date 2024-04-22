@@ -2,9 +2,8 @@ import ProjectsServices from "@/components/ProjectsServices";
 
 
 export const metadata = {
-  title: "CodeMat Soft-lutions | PROJECTS",
-  description:
-    "These are some selected projects.",
+  title: "PROJECTS",
+
 };
 
 

@@ -1,10 +1,13 @@
-import { createClient } from "@/utils/supabase/server";
+
+
+// import { createClient } from "@/utils/supabase/server";
+import AccordionBlog from "@/components/AccordionBlog";
 import Image from "next/image";
 import Link from "next/link";
 
+
 export const metadata = {
-  title: "CodeMat Soft-lutions | BLOG",
-  description: "CodeMat Soft-lutions blogpost page",
+  title: "BLOG",
 };
 
 const data = [
@@ -43,40 +46,45 @@ const data = [
 ];
 
 const BlogPage = async () => {
-  const supabase = createClient();
-  const { data: posts, error } = await supabase.from("posts").select("*");
+  // const supabase = createClient();
+  // const { data: posts, error } = await supabase.from("posts").select("*");
 
   return (
-    <div className='px-4 py-8 min-h-screen '>
+    <div className='px-4 py-8 min-h-screen max-w-7xl mx-auto'>
       <h1 className='font-semibold text-3xl text-center '>BLOG POSTS</h1>
 
-      <div className='mt-8 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
-        {data.map((post) => (
-          <Link key={post.id} href={`/blog/${post.slug}`}>
-            <div className='rounded-lg overflow-hidden border shadow-md'>
-              <div className='flex items-center justify-between bg-gray-100 dark:bg-gray-800 p-4'>
-                <Image
-                  alt=''
-                  priority
-                  width={30}
-                  height={30}
-                  src='/logo.webp'
-                />
+      <div className="mt-10">
+     
+        {/* <div className='mt-8 w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4'>
+          {data.map((post) => (
+            <Link key={post.id} href={`/blog/${post.slug}`}>
+              <div className='rounded-lg overflow-hidden border shadow-md'>
+                <div className='flex items-center justify-between bg-gray-100 dark:bg-gray-800 p-4'>
+                  <Image
+                    alt=''
+                    priority
+                    width={30}
+                    height={30}
+                    src='/logo.webp'
+                  />
 
-                <p className='text-sm font-light'>{post.date}</p>
-              </div>
-              <div>
-                <div className=' bg-gray-50 dark:bg-gray-700 p-4 space-y-3'>
-                  <p className='font-light text-xl'>{post.title}</p>
-                  <p className='text-sm line-clamp-3 font-light'>
-                    {post.content}
-                  </p>
-                  <p className='text-xs italic'>- Soft-lutions</p>
+                  <p className='text-sm font-light'>{post.date}</p>
+                </div>
+                <div>
+                  <div className=' bg-gray-50 dark:bg-gray-700 p-4 space-y-3'>
+                    <p className='font-light text-xl'>{post.title}</p>
+                    <p className='text-sm line-clamp-3 font-light'>
+                      {post.content}
+                    </p>
+                    <p className='text-xs italic'>- Soft-lutions</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </Link>
-        ))}
+            </Link>
+          ))}
+        </div> */}
+        {/* Accordion */}
+      <AccordionBlog />
       </div>
 
       {/* <pre>{JSON.stringify(posts, null, 2)}</pre> */}

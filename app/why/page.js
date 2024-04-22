@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 export const metadata = {
-  title: "CodeMat Soft-lutions | WHY?",
-  description: "Why you need a website. Find below reasons why you need a website.",
+  title: "WHY?",
+
 };
 
 
