@@ -31,7 +31,7 @@ const services = [
     id: 1,
     title: "AI ASSISTANT (RAG)",
     img: "/ai_assistant.webp",
-    desc: "We craft smart AI assistants that understand assist ans elevate user interactions. From Chatbots to voice interfaces, we are at the forefront of AI innovation.",
+    desc: "We craft smart AI assistants that understand, assist and elevate user interactions. From Chatbots to voice interfaces, we are at the forefront of AI innovation.",
   },
   {
     id: 2,
