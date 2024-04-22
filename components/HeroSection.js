@@ -44,11 +44,11 @@ const services = [
 const HeroSection = () => {
   return (
     <div className='py-6 px-4 max-w-7xl mx-auto'>
-      <p className='text-center text-sm bg-green-100 text-green-600 px-6 py-1.5 rounded-md'>
+      {/* <p className='text-center text-sm bg-green-100 text-green-600 px-6 py-1.5 rounded-md'>
         The website is currently under reconstruction. We will be done in a few
         days time.
-      </p>
-      <div className='py-6 flex flex-col md:flex-row items-center justify-around gap-6 lg:gap-0 '>
+      </p> */}
+      <div className='py-12 flex flex-col md:flex-row items-center justify-around gap-6 lg:gap-0 '>
         <div className='order-last md:order-first flex flex-col gap-5 w-full max-w-xl'>
           <div className={concert_one.className}>
             <p className='text-5xl md:text-6xl'>
