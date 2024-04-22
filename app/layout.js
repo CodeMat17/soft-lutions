@@ -12,7 +12,7 @@ export const metadata = {
     template: "%s | CodeMat Soft-lutions",
   },
   description:
-    "CodeMat Soft-lutions is a Lagos-based software development company specializing in website design, web application development, and innovative AI assistant solutions. We help businesses leverage the power of technology to achieve their goals. We weave technology into elegant solutions. Our passion lies in creating intelligent software and dynamic experiences for forward-thinking companies. We are here to transform your digital landscape.",
+    "CodeMat Soft-lutions is a software development company that specialises in the development of sleek, responsive and dynamic websites and web applications. We also develop innovative AI assistant solutions. We help businesses leverage the power of technology to achieve their goals. We weave technology into elegant solutions. Our passion lies in creating intelligent software and dynamic experiences for forward-thinking companies. We are here to transform your digital landscape.",
   keywords: [
     "web development company Enugu Nigeria",
     "website development Enugu Nigeria",
